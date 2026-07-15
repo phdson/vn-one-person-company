@@ -47,3 +47,13 @@ def test_read_budget_returns_total():
     reader = BrainReader(FIXTURE)
     ctx = reader.load()
     assert ctx.budget.total_year_vnd == 2_000_000_000
+
+
+def test_read_laws_parses_codes_with_hyphen():
+    """Mã Nghị định/Thông tư VN chứa gạch ngang (NĐ-CP, TT-BTC, TT-NHNN)."""
+    reader = BrainReader(FIXTURE)
+    ctx = reader.load()
+    codes = [law.code for law in ctx.laws]
+    assert "59/2020/QH14" in codes
+    assert "123/2020/NĐ-CP" in codes
+    assert "78/2021/TT-BTC" in codes
