@@ -1,0 +1,16 @@
+code: 16-compliance-payments
+name_vn: Tuân thủ & Cấp phép Thanh toán
+tier: 1
+description: Phòng Tuân thủ thanh toán — giấy phép trung gian thanh toán, AML/KYC, quan hệ NHNN
+agents:
+- payments-compliance-officer
+- aml-kyc-officer
+default_speaker: payments-compliance-officer
+refs_folder: refs/
+depends_on:
+- 01-governance
+- 17-risk-fraud
+aliases_vn:
+- Phòng Tuân thủ Thanh toán
+- Compliance
+- Payments Compliance

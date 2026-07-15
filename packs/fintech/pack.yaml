@@ -1,0 +1,22 @@
+name: Fintech / Payments Pack
+code: fintech
+version: 0.1.0
+description: "Cho công ty fintech, trung gian thanh toán, cross-border payments, FX (vd: Airwallex)"
+target_industries: ["payments", "cross-border-payments", "fx", "e-wallet", "payment-gateway", "embedded-finance"]
+adds_departments:
+  - 16-compliance-payments
+  - 17-risk-fraud
+  - 18-treasury-fx
+extends_departments:
+  - target: 01-governance
+    add_agents: ["regulatory-affairs-officer"]
+  - target: 03-finance
+    add_agents: ["reconciliation-specialist"]
+  - target: 09-product-tech
+    add_agents: ["payments-platform-architect"]
+compliance_refs:
+  - "Nghị định 52/2024/NĐ-CP về thanh toán không dùng tiền mặt"
+  - "Thông tư 40/2024/TT-NHNN về dịch vụ trung gian thanh toán"
+  - "Luật Phòng, chống rửa tiền 2022 (Luật số 14/2022/QH15)"
+  - "Nghị định 19/2023/NĐ-CP hướng dẫn Luật PCRT"
+  - "Pháp lệnh Ngoại hối 2005 (sửa đổi 2013) + NĐ 70/2014/NĐ-CP"

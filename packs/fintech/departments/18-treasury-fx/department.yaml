@@ -1,0 +1,17 @@
+code: 18-treasury-fx
+name_vn: Treasury & Ngoại hối
+tier: 3
+description: Phòng Treasury — quản lý dòng tiền đa tệ, FX risk, nostro/vostro, thanh khoản
+agents:
+- treasury-manager
+- fx-risk-manager
+default_speaker: treasury-manager
+refs_folder: refs/
+depends_on:
+- 03-finance
+- 17-risk-fraud
+aliases_vn:
+- Phòng Treasury
+- Treasury
+- Ngoại hối
+- FX

@@ -1,0 +1,16 @@
+code: 17-risk-fraud
+name_vn: Quản trị Rủi ro & Phòng chống Gian lận
+tier: 2
+description: Phòng Rủi ro — credit/transaction risk, fraud, chargeback, giám sát giao dịch
+agents:
+- risk-manager
+- fraud-analyst
+default_speaker: risk-manager
+refs_folder: refs/
+depends_on:
+- 16-compliance-payments
+- 03-finance
+aliases_vn:
+- Phòng Rủi ro
+- Risk
+- Fraud

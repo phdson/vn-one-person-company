@@ -89,7 +89,8 @@ class BrainReader:
 
     def _read_laws(self) -> list[LawReference]:
         _, body = self._read_file("laws.md")
-        rows = re.findall(r"-\s+(.+?)\s*\((\d+/\d+/\w+)\)", body)
+        # Mã văn bản VN có thể chứa gạch ngang (vd 52/2024/NĐ-CP, 40/2024/TT-NHNN)
+        rows = re.findall(r"-\s+(.+?)\s*\((\d+/\d+/[\w-]+)\)", body)
         return [LawReference(name=r[0], code=r[1]) for r in rows]
 
     def _read_decisions(self) -> list[DecisionEntry]:
